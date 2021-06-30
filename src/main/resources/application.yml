@@ -1,0 +1,8 @@
+server:
+  port: 8085
+
+
+app:
+  oauth:
+    client-id: client
+    client-secret: secret
