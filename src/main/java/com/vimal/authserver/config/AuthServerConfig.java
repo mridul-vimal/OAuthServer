@@ -45,6 +45,11 @@ public class AuthServerConfig  extends AuthorizationServerConfigurerAdapter {
                .authorizedGrantTypes("password","client_credentials")
                .accessTokenValiditySeconds(20000)
                .refreshTokenValiditySeconds(20000)
+               .scopes("any")
+               .and()
+               .withClient("resource-server")
+               .secret(encoder.encode("secret"))
+               .authorizedGrantTypes("password")
                .scopes("any");
     }
 
