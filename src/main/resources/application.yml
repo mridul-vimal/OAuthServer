@@ -1,5 +1,12 @@
 server:
-  port: 8085
+  port: 8980
+  ssl:
+    enabled: true
+    key-alias: skipper
+    key-store: "src/main/resources/key.keystore"
+    key-store-type: jks
+    key-store-password: password
+    key-password: password
 
 
 app:
