@@ -1,3 +1,5 @@
+application:
+  name: OAuthServer
 server:
   port: 8980
   ssl:
@@ -13,3 +15,5 @@ app:
   oauth:
     client-id: client
     client-secret: secret
+    token:
+     key: access_token

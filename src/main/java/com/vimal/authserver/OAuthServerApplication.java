@@ -32,7 +32,7 @@ public class OAuthServerApplication  implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 
 		repository.deleteAll();
-		repository.save(Account.builder().userName("mridul").password("password").build());
+		repository.save(Account.builder().userName("neustar").password("neustar").build());
 		log.info("It works");
 
 	}
